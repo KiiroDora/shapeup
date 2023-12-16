@@ -224,6 +224,7 @@ public class PlayerMovement : MonoBehaviour
         transform.localScale = squaresize;
 
         rb2d.constraints = RigidbodyConstraints2D.None;
+        rb2d.rotation = 0;
         rb2d.constraints = RigidbodyConstraints2D.FreezeRotation; //remove all constraints and add back the rotation lock
         coll.enabled = true;
         GetComponent<CircleCollider2D>().enabled = false;
